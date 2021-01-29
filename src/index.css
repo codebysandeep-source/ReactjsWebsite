@@ -1,0 +1,109 @@
+/* Mulish Font */
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    user-select: none;
+}
+/* ================-Home and About-================== */
+.nav-link a{color:lightgray;}
+.nav-item a:hover{
+    color:yellowgreen !important;
+}
+.menu_active{
+    font-weight: bold;
+    color:yellowgreen !important;
+    border-bottom: 2px solid green;
+}
+.brand-name{
+    color:yellowgreen;
+}
+ #header{
+  margin-top: 100px;
+}
+ .des{
+  margin-top: 50px;
+}
+ .cgray{
+  color:gray;
+}
+
+/* animation */
+#header .animated{  
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes up-down{
+0%{
+    transform: translateY(10px);
+}
+100%{
+    transform: translateY(-10px);
+}
+}
+@keyframes up-down{
+0%{
+    transform: translateY(10px);
+}
+100%{
+    transform: translateY(-10px);
+}
+}
+
+/* =========Footer=========== */
+footer{
+    margin-top: 13vh;
+    padding-top: 2vh;
+    color: rgba(0, 0, 0, 0.521);
+    height: 53px;
+}
+/* =========Contact=========== */
+textarea{
+    border-color:lightgray;
+    width:34rem;
+    height:7em;
+}
+/* ---- */
+.navbar-toggler-icon {width:1em !important;height:1.3em !important;}
+/* ================Responsive================ */
+/* Contact */
+@media screen and (min-width:1001px) and (max-width:1125px){
+textarea{
+    width:28rem;
+}}
+@media screen and (min-width:821px) and (max-width:1000px){
+textarea{
+    width:20.7rem;
+}
+/* mobile menu */
+.navbar-nav{display: flex !important;flex-direction: row !important;margin:30px 0;}
+.nav-link{padding: 0 5px !important}}
+@media screen and (min-width:769px) and (max-width:820px){
+textarea{
+    width:20.7rem;
+}
+/* mobile menu */
+.navbar-nav{display: flex !important;flex-direction: row !important;margin:30px 0;}
+.nav-link{padding: 0 5px !important}}
+@media screen and (min-width:551px) and (max-width:768px){
+textarea{
+    width:20.7rem;
+}
+/* mobile menu */
+.navbar-nav{display: flex !important;flex-direction: row !important;margin:30px 0;}
+.nav-link{padding: 0 5px !important}
+}
+@media screen and (min-width:280px) and (max-width:550px){
+textarea{
+    width:17rem;
+}
+footer{
+    height: 65px;
+}
+/* mobile menu */
+.navbar-nav{display: flex !important;flex-direction: row !important;margin:30px 0;}
+.nav-link{padding: 0 5px !important}
+}
+
